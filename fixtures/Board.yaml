@@ -1,0 +1,7 @@
+App\Entity\Board:
+  board1:
+    name: 'Board de test'
+    categories: ['@category1','@category2','@category3']
+  board2:
+    name: '2nd board'
+    categories: ['@category1b2']

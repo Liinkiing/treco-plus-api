@@ -1,0 +1,11 @@
+App\Entity\User:
+  user{1..5}:
+    username: '<username()>'
+    email: '<email()>'
+    plainPassword: 'test'
+    teams: ['@team1']
+  userOwner:
+    username: 'admin'
+    email: 'admin@test.com'
+    plainPassword: 'admin'
+    teams: ['@team1']

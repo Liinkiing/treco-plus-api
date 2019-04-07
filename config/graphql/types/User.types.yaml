@@ -9,6 +9,7 @@ User:
         type: 'ID!'
       username:
         type: 'String!'
+        resolve: '@=value.getRealUsername()'
       email:
         type: 'String!'
       tickets:

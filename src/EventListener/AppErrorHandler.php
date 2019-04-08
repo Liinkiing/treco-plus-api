@@ -8,10 +8,12 @@ use Overblog\GraphQLBundle\Event\ExecutorResultEvent;
 
 class AppErrorHandler
 {
+
+
     public function onPostExecutor(ExecutorResultEvent $event): void
     {
         $myErrorFormatter = static function(Error $error) {
-            return FormattedError::createFromException($error);
+            return FormattedError::createFromException($error, $_SERVER['APP_DEBUG']);
         };
 
         $myErrorHandler = static function(array $errors, callable $formatter) {

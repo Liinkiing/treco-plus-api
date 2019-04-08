@@ -16,3 +16,5 @@ User:
         type: '[Ticket!]!'
       teams:
         type: '[Team!]!'
+      ownedTeams:
+        type: '[Team!]!'

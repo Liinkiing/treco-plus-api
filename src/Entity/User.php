@@ -192,6 +192,17 @@ class User implements UserInterface
         return $this->teams;
     }
 
+    /**
+     * @return Collection|Team[]
+     */
+    public function getOwnedTeams(): Collection
+    {
+        $self = $this;
+        return $this->teams->filter(static function (Team $team) use ($self) {
+            return $team->getOwner() === $self;
+        });
+    }
+
     public function addTeam(Team $team): self
     {
         if (!$this->teams->contains($team)) {

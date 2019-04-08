@@ -4,7 +4,7 @@ App\Entity\Ticket:
     content: '<text(75)>'
     priority: 1
     position: 1
-    author: '@userOwner'
+    author: '@user1Owner'
     endDate: '<dateTimeBetween("+10 days", "+20 days")>'
     completion: 0
   ticket2:
@@ -20,6 +20,14 @@ App\Entity\Ticket:
     content: '<text(75)>'
     priority: 1
     position: 1
-    author: '@userOwner'
+    author: '@user1Owner'
+    endDate: '<dateTimeBetween("+10 days", "+20 days")>'
+    completion: 0
+  ticket1b3:
+    name: 'Do some stuff again...'
+    content: '<text(75)>'
+    priority: 1
+    position: 1
+    author: '@user2Owner'
     endDate: '<dateTimeBetween("+10 days", "+20 days")>'
     completion: 0

@@ -13,3 +13,7 @@ App\Entity\Category:
     name: 'To do'
     position: 1
     tickets: ['@ticket1b2']
+  category1b3:
+    name: 'To do'
+    position: 1
+    tickets: ['@ticket1b3']

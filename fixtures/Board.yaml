@@ -1,7 +1,13 @@
 App\Entity\Board:
   board1:
     name: 'Board de test'
+    background: 'https://images.unsplash.com/photo-1554381916-5e5cbc5876d1?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&ixid=eyJhcHBfaWQiOjF9'
     categories: ['@category1','@category2','@category3']
   board2:
     name: '2nd board'
+    background: 'https://images.unsplash.com/photo-1553989822-3f997329c1b5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&ixid=eyJhcHBfaWQiOjF9'
     categories: ['@category1b2']
+  board3:
+    name: 'Backlog de coto'
+    background: 'https://images.unsplash.com/photo-1551988098-87513d4cdaa3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&ixid=eyJhcHBfaWQiOjF9'
+    categories: ['@category1b3']

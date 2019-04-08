@@ -8,6 +8,8 @@ Board:
     fields:
       id:
         type: 'ID!'
+      background:
+        type: 'URI'
       name:
         type: 'String!'
       categories:

@@ -53,7 +53,7 @@ class GlobalIdResolver implements ResolverInterface
         }
 
         if (!$node) {
-            throw new UserError('Could not find node!');
+            throw new UserError('Not found!');
         }
 
 

@@ -37,6 +37,11 @@ class Board
      */
     private $categories;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $background;
+
     public function __construct()
     {
         $this->categories = new ArrayCollection();
@@ -98,6 +103,18 @@ class Board
                 $category->setBoard(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getBackground(): ?string
+    {
+        return $this->background;
+    }
+
+    public function setBackground(?string $background): self
+    {
+        $this->background = $background;
 
         return $this;
     }

@@ -3,6 +3,7 @@ Team:
   inherits: ['Node']
   config:
     name: Team
+    fieldsDefaultAccess: "@=hasPermission(value, 'VIEW')"
     interfaces: ['Node']
     fields:
       id:

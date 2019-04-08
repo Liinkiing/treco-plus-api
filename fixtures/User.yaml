@@ -4,8 +4,18 @@ App\Entity\User:
     email: '<email()>'
     plainPassword: 'test'
     teams: ['@team1']
-  userOwner:
-    username: 'admin'
-    email: 'admin@test.com'
-    plainPassword: 'admin'
+  user1Owner:
+    username: 'owner1'
+    email: 'owner1@test.com'
+    plainPassword: 'owner'
     teams: ['@team1']
+  user2Owner:
+    username: 'owner2'
+    email: 'owner2@test.com'
+    plainPassword: 'owner'
+    teams: ['@team2']
+  userSuperAdmin:
+    username: 'superAdmin'
+    email: 'superadmin@test.com'
+    plainPassword: 'superadmin'
+    roles: ['ROLE_SUPER_ADMIN']

@@ -1,6 +1,11 @@
 App\Entity\Team:
   team1:
-    name: '<text(30)>'
+    name: 'Capcoto'
     description: '<text(300)>'
-    owner: '@userOwner'
+    owner: '@user1Owner'
     boards: ['@board1','@board2']
+  team2:
+    name: 'Génération issou'
+    description: '<text(300)>'
+    owner: '@user2Owner'
+    boards: ['@board3']

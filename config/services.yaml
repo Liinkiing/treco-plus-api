@@ -26,3 +26,7 @@ services:
     App\EventListener\UserListener:
         tags:
             - { name: doctrine.orm.entity_listener, event: prePersist }
+
+    App\EventListener\AppErrorHandler:
+        tags:
+            - { name: kernel.event_listener, event: graphql.post_executor, method: onPostExecutor }

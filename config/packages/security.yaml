@@ -3,7 +3,8 @@ security:
         App\Entity\User:
             algorithm: argon2i
     role_hierarchy:
-        ROLE_OWNER: [ROLE_USER]
+        ROLE_SUPER_ADMIN: [ROLE_ADMIN]
+        ROLE_ADMIN: [ROLE_USER]
 
     # https://symfony.com/doc/current/security.html#where-do-users-come-from-user-providers
     providers:

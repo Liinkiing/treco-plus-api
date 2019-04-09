@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\TicketRepository")
@@ -35,6 +36,7 @@ class Ticket
     private $priority;
 
     /**
+     * @Gedmo\SortablePosition
      * @ORM\Column(type="integer")
      */
     private $position;
@@ -56,6 +58,7 @@ class Ticket
     private $completion;
 
     /**
+     * @Gedmo\SortableGroup
      * @ORM\ManyToOne(targetEntity="App\Entity\Category", inversedBy="tickets")
      * @ORM\JoinColumn(nullable=false)
      */

@@ -11,3 +11,11 @@ Mutation:
           inputType: LoginUserInput
           payloadType: LoginUserPayload
           mutateAndGetPayload: '@=mutation("App\\GraphQL\\Mutation\\User\\LoginUserMutation", [value])'
+      changeTicketPosition:
+        description: 'Change a ticket position'
+        access: "@=isAuthenticated()"
+        builder: 'Relay::Mutation'
+        builderConfig:
+          inputType: ChangeTicketPositionInput
+          payloadType: ChangeTicketPositionPayload
+          mutateAndGetPayload: '@=mutation("App\\GraphQL\\Mutation\\ChangeTicketPositionMutation", [value])'

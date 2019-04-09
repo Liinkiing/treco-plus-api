@@ -1,0 +1,17 @@
+ChangeTicketPositionInput:
+  type: relay-mutation-input
+  config:
+    description: 'Input of changeTicketPosition mutation'
+    fields:
+      ticketId:
+        type: 'ID!'
+        description: 'The ID of the ticket being moved'
+      fromCategoryId:
+        type: 'ID!'
+        description: 'From what ID the ticket is being moved'
+      toCategoryId:
+        type: 'ID!'
+        description: 'In what ID the ticket will be moved to'
+      newPosition:
+        type: 'Int!'
+        description: 'In what index (position) the ticket will be moved to'

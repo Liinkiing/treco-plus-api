@@ -1,0 +1,8 @@
+ChangeTicketPositionPayload:
+  type: relay-mutation-payload
+  config:
+    description: 'Payload of changeTicketPosition'
+    fields:
+      board:
+        type: 'Board!'
+        description: 'Get the newly updated board'

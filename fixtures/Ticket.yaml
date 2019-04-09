@@ -3,7 +3,7 @@ App\Entity\Ticket:
     name: 'Create the BO'
     content: '<text(75)>'
     priority: 1
-    position: 1
+    position: 0
     author: '@user1Owner'
     endDate: '<dateTimeBetween("+10 days", "+20 days")>'
     completion: 0
@@ -11,7 +11,7 @@ App\Entity\Ticket:
     name: 'Add Front-end'
     content: '<text(75)>'
     priority: 2
-    position: 2
+    position: 1
     author: '@user1'
     endDate: '<dateTimeBetween("+10 days", "+20 days")>'
     completion: 50
@@ -19,7 +19,7 @@ App\Entity\Ticket:
     name: 'Do some stuff...'
     content: '<text(75)>'
     priority: 1
-    position: 1
+    position: 0
     author: '@user1Owner'
     endDate: '<dateTimeBetween("+10 days", "+20 days")>'
     completion: 0
@@ -27,7 +27,47 @@ App\Entity\Ticket:
     name: 'Do some stuff again...'
     content: '<text(75)>'
     priority: 1
-    position: 1
+    position: 0
     author: '@user2Owner'
     endDate: '<dateTimeBetween("+10 days", "+20 days")>'
     completion: 0
+  ticket4:
+    name: Devenir RICHE
+    content: '<text(75)>'
+    priority: 10
+    position: 0
+    author: '@user1Owner'
+    endDate: '<dateTimeBetween("+10 days", "+20 days")>'
+    completion: 100
+  ticket5:
+    name: Faire un topic rouge
+    content: '<text(75)>'
+    priority: 1
+    position: 0
+    author: '@user1Owner'
+    endDate: '<dateTimeBetween("+10 days", "+20 days")>'
+    completion: 0
+  ticket6:
+    name: Purification par l'atome
+    content: '<text(75)>'
+    priority: 2
+    position: 1
+    author: '@user1Owner'
+    endDate: '<dateTimeBetween("+10 days", "+20 days")>'
+    completion: 75
+  ticket7:
+    name: Boire l'eau du gange
+    content: '<text(75)>'
+    priority: 1
+    position: 2
+    author: '@user1Owner'
+    endDate: '<dateTimeBetween("+10 days", "+20 days")>'
+    completion: 10
+  ticket8:
+    name: Refaire Risific
+    content: '<text(75)>'
+    priority: 1
+    position: 3
+    author: '@user1Owner'
+    endDate: '<dateTimeBetween("+10 days", "+20 days")>'
+    completion: 66

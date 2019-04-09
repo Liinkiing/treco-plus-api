@@ -5,6 +5,7 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\CategoryRepository")
@@ -27,6 +28,7 @@ class Category
     private $name;
 
     /**
+     * @ORM\OrderBy({"position" = "ASC"})
      * @ORM\OneToMany(targetEntity="App\Entity\Ticket", mappedBy="category", orphanRemoval=true)
      */
     private $tickets;
@@ -37,6 +39,7 @@ class Category
     private $board;
 
     /**
+     * @Gedmo\SortablePosition
      * @ORM\Column(type="integer")
      */
     private $position;
